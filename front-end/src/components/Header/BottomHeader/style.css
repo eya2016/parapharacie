@@ -1,0 +1,65 @@
+
+.BottomHeader{
+    display: flex;
+    justify-content: center;
+    margin-top:-50px;
+    font-weight: bolder;
+}
+.Menu{
+    display: flex;
+    position: relative;
+}
+.MenuItem{
+    list-style: none;
+    display: block;
+    padding: 0 10px;
+    position: relative;
+    font-weight:bolder;
+}
+.Dropdown{
+    margin-left:-10px;
+    position: absolute;
+    background: #fff;
+    display: none;
+    margin-top: 0px;
+    width: 1095px;
+    opacity: 0;
+    transition: all 0.4s linear;
+    box-shadow: 0 0 4px -1px grey;
+    padding: 20px 10px;
+    left: -400px;
+    z-index: 99999;
+}
+.Dropdown > li{
+    float: left;
+    width: 20%;
+    padding:0 40px;
+}
+/* .Dropdown > .Column{
+    
+} */
+.Menu .MenuItem > a{
+    color: #333;
+    text-decoration: none;
+    font-size:16px;
+}
+.MenuItem:hover > .Dropdown{
+    display: block;
+    opacity: 1;
+    color:green;
+}
+
+.Dropdown > li > ul > li{
+    margin: 5px 0;
+}
+.Dropdown > li > ul > li > a{
+    color: #666;
+    text-decoration: none !important;
+}
+.Dropdown > li > ul > li > a:hover{
+    font-weight:bolder;
+    color:green;
+}
+.item{
+    margin-top:75px;
+}
